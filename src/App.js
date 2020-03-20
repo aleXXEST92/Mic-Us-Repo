@@ -1,12 +1,15 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from 'react';
+import Home from './Components/Home'
+import '/Users/luismunoz/Documents/Mic-Us-App/mic-us/src/App.css';
 
-function App() {
-  return (
-    <div className="App">
-     hello world!
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+      <>
+        <Home/>
+      </>
+    );
+  }
 }
 
-export default App;
+export default App
