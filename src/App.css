@@ -40,6 +40,7 @@
 
 .signup-container {
   padding:15px;
+  padding-right: 30px;
   width: 30%;
   float: right;
 }
@@ -53,7 +54,7 @@
 .button {
   position: fixed;
   bottom:50px;
-  right: 100px;
+  right: 120px;
 }
 
 .signup-form {
