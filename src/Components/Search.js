@@ -7,12 +7,11 @@ const Search = () => {
     return (
         <div className="search">
         <h2>Discover Independent <br/>Artists Here.</h2>
-        <p>Support your local friends by streaming,<br/> 
+        <p>Support your local friends by streaming, <br/>
           following, sharing, and liking their art.</p>
         <Form className="searchbar">
-        <FormControl type="text" placeholder="Band Name or Genre.." className="mr-sm-2" /> <Button>Search</Button>
-  </Form>
-        
+        <FormControl type="text" placeholder="Artist Name or Genre.." className="mr-sm-2" /> <Button>Search</Button>
+        </Form>  
       </div>
     )
 }

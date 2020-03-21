@@ -15,7 +15,7 @@ const Navigation = () => {
                 <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#register">Sign Up Now</Nav.Link>
+                        <Nav.Link href="#register">Log In</Nav.Link>
                         <Nav.Link href="#trending">Trending Now</Nav.Link>
                     </Navbar.Collapse>
         </Navbar>
