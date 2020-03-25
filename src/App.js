@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import Home from './Components/Home'
-import SignUp from './Components/SignUp'
+import Navbar from './Components/Navbar'
+import Router from '../src/Router'
+import { BrowserRouter } from 'react-router-dom';
 import '/Users/luismunoz/Documents/Mic-Us-App/mic-us/src/App.css';
 
 class App extends Component {
   render () {
     return (
-      <>
-        <Home/>
-        <SignUp/>
-      </>
+      <BrowserRouter>
+        <Navbar/>
+        <Router />
+      </BrowserRouter>
     );
   }
 }

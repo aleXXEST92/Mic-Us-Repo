@@ -10,7 +10,6 @@ class Home extends Component {
         <div class="home">
           <div class="home__background-image"></div>
         </div>
-          <Navbar/>
           <Search/>
       </>
     );

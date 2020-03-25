@@ -15,7 +15,7 @@
   height:110px;
   width:100%;
   background-color: white;
-  position: fixed;
+  z-index: 100;
 }
 
 .slide {
@@ -58,7 +58,7 @@
 }
 
 .signup-form {
-top:200px;
+top:100px;
 position: relative;
 }
 
