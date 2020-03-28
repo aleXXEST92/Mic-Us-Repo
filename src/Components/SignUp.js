@@ -1,14 +1,20 @@
 import React from 'react'
 import { Form, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom'
+
 
 const SignUp = () => {
 return (<>
+
+    <div class="sign">
+          <div class="signup__background-image"></div>
+        </div>
+
     <div className="signup-container">
-        <h2 className="signup">Sign Up Now</h2>
+        <h2 className="signup-header">Sign Up Now</h2>
 
         <Form className="signup-form">
-
-        <Form.Group controlId="formGroupPassword">
+        <Form.Group>
             <Form.Label>Artist Name</Form.Label>
         <Form.Control placeholder="Artist Name" />
 
@@ -29,18 +35,18 @@ return (<>
         <option>Classical/Jazz</option>
       </Form.Control>
        
+      <Form.Label>Email Address</Form.Label>
+      <Form.Control placeholder="Email" />
+      </Form.Group>
+      </Form> 
 
-        
-            <Form.Label>Email Address</Form.Label>
-        <Form.Control placeholder="Email" />
-
-        </Form.Group>
-
-        </Form> 
+      <Link to="">
+          <Button className="register-button">
+              <span>Register Now!</span>
+          </Button>     
+      </Link> 
       
     </div>
-    <h3 class="hidden">Become A Member</h3>
-    <Button className="button">Sign Up!</Button>
        </>
     )
 }

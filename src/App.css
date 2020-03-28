@@ -18,6 +18,11 @@
   z-index: 100;
 }
 
+.list {
+  margin: 25px;
+  list-style: none;
+}
+
 .slide {
   display: inline;
 }
@@ -38,33 +43,52 @@
   display: flex;
 }
 
-.signup-container {
-  padding:15px;
-  padding-right: 30px;
-  width: 30%;
-  float: right;
-}
-
-.signup {
+.promo {
+  display: inline;
   position: fixed;
-  top: 120px;
-  padding-top: 20px;
+  top: 175px;
+  right: 10%;
 }
 
-.button {
+.signup-button {
   position: fixed;
   bottom:50px;
   right: 120px;
 }
 
-.signup-form {
-top:100px;
-position: relative;
+.signup__background-image {
+  position: fixed;  
+  width: 100vw;
+  height: 85vh;
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5a63c6f59f07f55bcda7fad9/1558229854659-M0IR8W1GLOLHE95R4Q67/ke17ZwdGBToddI8pDm48kBZw6jF4_OvU-ddo_vwqGhp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ub61YCrK70I7JIpWiI8ho4Yi1WvVNQtDE81xuRbL1MFKm0sD-Bab7E9MY8W31A7zMQ/258DDEA7-C6CA-46D3-93ED-C13F6BE48A67.JPG?format=2500w);
+  background-size: cover;
+  background-position: bottom;
+  opacity: 0.75;
 }
 
+.signup-container {
+  padding:25px;
+  width: 100%;
+}
+
+.signup-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.signup-form {
+  position: relative;
+  padding: 10px;
+}
+
+.register-button{
+  position: fixed;
+  left: 375px;
+}
 
 @media  (max-width: 700px) {
-  .signup-container {
+  .promo {
   display: none;
   }
 
@@ -81,10 +105,16 @@ position: relative;
     right:145px;
   }
 
-  .button {
+  .signup-button {
     width:25%;
     position: fixed;
     top: 515px;
     left:175px;
+  }
+}
+
+@media  (min-width: 700px) {
+  .hidden {
+    display: none;
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 
@@ -16,10 +16,10 @@ const Navigation = () => {
             <div class="slide">Promote Yourself, Or We Will!</div>
                 <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-end">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <li className="nav-list-item">
-                        <Link to="/sign-up">Sign Up</Link>
-                        </li>
+                        <ul className="list">
+                            <li className="link"><Link to="/">Home</Link></li>                    
+                            <li><Link to="/sign-up">Sign Up</Link></li>
+                        </ul>
                     </Navbar.Collapse>
         </Navbar>
         </div>
