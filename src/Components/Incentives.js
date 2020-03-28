@@ -5,6 +5,11 @@ const Incentives = () => {
     return (
         <div className="promo">
             Why Become A Member???
+            <ul>
+                 <li>Free Investment</li>
+                 <li>Be Discovered</li>
+                 <li></li>
+             </ul>
       </div>
     )
 }

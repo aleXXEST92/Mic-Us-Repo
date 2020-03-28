@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 const SignUpButton = () => {
     return (
+        <>
         <div className="signup-container">
              <h3 class="hidden">Become A Member</h3>
              <Link to="/sign-up">
@@ -14,6 +15,7 @@ const SignUpButton = () => {
                 </Button>     
             </Link> 
         </div>
+        </>
     )
 }
 

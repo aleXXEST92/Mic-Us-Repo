@@ -11,7 +11,7 @@ return (<>
         </div>
 
     <div className="signup-container">
-        <h2 className="signup-header">Sign Up Now</h2>
+        <h2 className="signup-header">Invest In Yourself</h2>
 
         <Form className="signup-form">
         <Form.Group>

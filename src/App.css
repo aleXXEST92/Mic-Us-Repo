@@ -75,6 +75,7 @@
   text-align: center;
   padding-top: 10px;
   padding-bottom: 20px;
+  opacity: 0.99;
 }
 
 .signup-form {
@@ -82,9 +83,11 @@
   padding: 10px;
 }
 
-.register-button{
+.register-button {
+  width:25%;
   position: fixed;
-  left: 375px;
+  top: 515px;
+  left:475px;
 }
 
 @media  (max-width: 700px) {
@@ -106,6 +109,13 @@
   }
 
   .signup-button {
+    width:25%;
+    position: fixed;
+    top: 515px;
+    left:175px;
+  }
+
+  .register-button {
     width:25%;
     position: fixed;
     top: 515px;
