@@ -60,15 +60,18 @@
   position: fixed;  
   width: 100vw;
   height: 85vh;
-  background-image: url(https://images.squarespace-cdn.com/content/v1/5a63c6f59f07f55bcda7fad9/1558229854659-M0IR8W1GLOLHE95R4Q67/ke17ZwdGBToddI8pDm48kBZw6jF4_OvU-ddo_vwqGhp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1Ub61YCrK70I7JIpWiI8ho4Yi1WvVNQtDE81xuRbL1MFKm0sD-Bab7E9MY8W31A7zMQ/258DDEA7-C6CA-46D3-93ED-C13F6BE48A67.JPG?format=2500w);
+  background-image: url();
   background-size: cover;
   background-position: bottom;
   opacity: 0.75;
 }
 
 .signup-container {
-  padding:25px;
-  width: 100%;
+  position: fixed;
+  left: 160px;
+  padding:45px;
+  padding-top: 125px;
+  width: 70%;
 }
 
 .signup-header {
@@ -81,6 +84,26 @@
 .signup-form {
   position: relative;
   padding: 10px;
+}
+
+.style {
+  text-align: center;
+  font-size: 18px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#text {
+display: flex;
+text-align: center ;
+}
+
+#select-input {
+border: 1px solid black;
+text-align: center;
 }
 
 .register-button {
@@ -115,10 +138,17 @@
     left:175px;
   }
 
+  .signup-container {
+    position: fixed;
+    left: 25px;
+    padding:35px;
+    width: 90%;
+  }
+
   .register-button {
     width:25%;
     position: fixed;
-    top: 515px;
+    top: 555px;
     left:175px;
   }
 }
