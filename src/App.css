@@ -60,7 +60,7 @@
   position: fixed;  
   width: 100vw;
   height: 85vh;
-  background-image: url();
+  background-image: url(https://images.unsplash.com/photo-1506157786151-b8491531f063?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);
   background-size: cover;
   background-position: bottom;
   opacity: 0.75;
@@ -81,36 +81,29 @@
   opacity: 0.99;
 }
 
-.signup-form {
-  position: relative;
-  padding: 10px;
-}
-
 .style {
   text-align: center;
   font-size: 18px;
+  padding: 10px;
+  background-color: white;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 #text {
-display: flex;
-text-align: center ;
-}
-
-#select-input {
-border: 1px solid black;
-text-align: center;
+  display: flex;
+  text-align: center;
 }
 
 .register-button {
   width:25%;
   position: fixed;
-  top: 515px;
-  left:475px;
+  top: 550px;
+  left:415px;
 }
 
 @media  (max-width: 700px) {
@@ -131,6 +124,10 @@ text-align: center;
     right:145px;
   }
 
+  .signup-header {
+    padding-top: 50px;
+  }
+
   .signup-button {
     width:25%;
     position: fixed;
@@ -148,7 +145,7 @@ text-align: center;
   .register-button {
     width:25%;
     position: fixed;
-    top: 555px;
+    top: 515px;
     left:175px;
   }
 }
