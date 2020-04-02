@@ -1,28 +1,44 @@
 import React, { Component } from 'react'
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
-import { addArtist } from '../redux/action'
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 
 class SignUp extends Component {
-  state = {
-    name: '',
-    email: '',
-    type: '',
-    genre: ''
+  constructor(props) {
+    super(props)
+    this.state = {
+      name: '',
+      email: '',
+      type: '',
+      genre: ''
+  }
+  }
+
+artistName = event => {
+  const newArtist = (event.target.value);
+  this.setState({name:newArtist})
 }
 
+artistEmail = event => {
+  const newEmail = (event.target.value);
+  this.setState({email:newEmail})
+}
 
 artistChange = event => {
-const newType = {...this.state }
-newType.type = (event.target.value);
+const newType = (event.target.value);
+this.setState({type:newType})
+console.log(newType)
 };
 
 genreChange = event => {
-const newGenre = {...this.state }
-newGenre.genre = (event.target.value);
+const newGenre = (event.target.value);
+this.setState({genre:newGenre})
+}
+
+handleSubmit = () => {
+  this.props.addArtist(this.state)
 }
 
 
@@ -38,9 +54,15 @@ return (
 
     <Form className="signup-form">
       <Form.Group>
-        <Form.Control className="style" placeholder="Artist Name" />
+        <Form.Control 
+        className="style" 
+        placeholder="Artist Name"
+        onChange={this.artistName} />
 
-        <Form.Control className="style" placeholder="Email Address" />
+        <Form.Control 
+        className="style" 
+        placeholder="Email Address" 
+        onChange={this.artistEmail}/>
 
         <div className="wrapper">
           <TextField
@@ -70,7 +92,7 @@ return (
     </Form> 
 
     <Link>
-      <Button onclick={() => {addArtist(this.state)} } className="register-button">
+      <Button onClick={() => {this.handleSubmit(this.state)}} className="register-button">
         <span>Register Now!</span>
       </Button>     
     </Link> 

@@ -4,6 +4,7 @@ import { addArtist } from '../redux/action'
 
 
 const mapDispatchToProps = (dispatch) => {
+    console.log("signUpContainer")
     return {
         addArtist: (index) => dispatch(addArtist(index))
     }
