@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Search from "./Search"
+import Search from "../containers/Search"
 import '/Users/luismunoz/Documents/Mic-Us-App/mic-us/src/App.css';
 
 class Home extends Component {

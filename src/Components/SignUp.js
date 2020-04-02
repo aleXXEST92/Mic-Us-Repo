@@ -1,26 +1,32 @@
-import React from 'react'
+import React, { Component } from 'react'
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
+import { addArtist } from '../redux/action'
 import { Form, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 
 
-const SignUp = () => {
-
-const [artistType, setArtistType] = React.useState('');
-
-const artistChange = event => {
-setArtistType(event.target.value);
-// console.log(event.target.value)
-};
-
-const [genreType, setGenreType] = React.useState('');
-
-const genreChange = event => {
-  setGenreType(event.target.value);
+class SignUp extends Component {
+  state = {
+    name: '',
+    email: '',
+    type: '',
+    genre: ''
 }
 
-  
+
+artistChange = event => {
+const newType = {...this.state }
+newType.type = (event.target.value);
+};
+
+genreChange = event => {
+const newGenre = {...this.state }
+newGenre.genre = (event.target.value);
+}
+
+
+render () {
 return (
 <>
   <div class="sign">
@@ -41,8 +47,7 @@ return (
             id="outlined-select-currency"
             select
             label="Type Of Artist"
-            value={artistType}
-            onChange={artistChange}
+            onChange={this.artistChange}
             variant="outlined">
               <MenuItem value={1}>Band</MenuItem>
               <MenuItem value={2}>Solo</MenuItem>
@@ -53,8 +58,7 @@ return (
             id="outlined-select-currency"
             select
             label="Genre Type"
-            value={genreType}
-            onChange={genreChange}
+            onChange={this.genreChange}
             variant="outlined">
               <MenuItem value={1}>Rock/Alternative</MenuItem>
               <MenuItem value={2}>Rap/Hip Hop</MenuItem>
@@ -65,15 +69,15 @@ return (
       </Form.Group>
     </Form> 
 
-    <Link to="">
-      <Button className="register-button">
+    <Link>
+      <Button onclick={() => {addArtist(this.state)} } className="register-button">
         <span>Register Now!</span>
       </Button>     
     </Link> 
       
   </div>
 </>
-  )
+    )
+  }
 }
-
 export default SignUp;

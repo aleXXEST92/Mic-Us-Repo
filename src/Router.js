@@ -1,6 +1,6 @@
 import React from 'react'
 import Dashboard from './Components/Dashboard'
-import SignUp from './Components/SignUp'
+import SignUp from './containers/SignUp'
 import { Switch, Route } from 'react-router'
 // Write component imports here //
 

@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form, FormControl, Button } from 'react-bootstrap';
 
 
-const Search = () => {
+const Search = (props) => {
+  console.log(props,"props in search component")
     return (
         <div className="search">
         <h2>Discover Independent <br/>Artists Here.</h2>
