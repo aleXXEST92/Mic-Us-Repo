@@ -8,7 +8,7 @@ const SignUpButton = () => {
     return (
         <>
         <div className="signup-container">
-             <h3 class="hidden">Become A Member</h3>
+             <h3 className="hidden">Become A Member</h3>
              <Link to="/sign-up">
                 <Button className="signup-button">
                   <span>Sign Up!</span>

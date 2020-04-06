@@ -6,8 +6,8 @@ class Home extends Component {
   render () {
     return (
       <>
-        <div class="home">
-          <div class="home__background-image"></div>
+        <div className="home">
+          <div className="home__background-image"></div>
         </div>
           <Search/>
       </>
